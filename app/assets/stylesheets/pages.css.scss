@@ -1,0 +1,21 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header li {
+	display: inline-block;
+  margin-right: 5px;
+  padding: 10px 20px;
+}
+
+.main {
+	height: 600px;
+  background-image: url('http://i.imgur.com/QUeew3X.jpg');
+  background-size: cover;
+}
+
+.footer a {
+	float: right;
+	display: inline-block;
+  padding: 10px 10px;
+}
