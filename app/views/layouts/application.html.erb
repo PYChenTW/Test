@@ -4,13 +4,33 @@
   <title>Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "application", media: "all" %>
+<%= javascript_include_tag "application" %>
+
 </head>
 <body>
-
+<div class="header">
+  <div class="container">
+    <ul>
+      <li><%= link_to 'Welcome', '/' %></li>
+      <li><%= link_to 'Portfolio', '/portfolio' %></li>
+      <li>Blog</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Pudding</li>
+    </ul> 
+  </div>
+</div>
 <%= yield %>
-
+<div class="footer">
+  <div class="container">
+    <a href=""><img src="https://photos-1.dropbox.com/t/2/AADU0KmUhgJqQ7nS2nMWiOH7HbJ2B0Cjn4MokHgXf7Ic4Q/12/275238024/png/32x32/1/_/1/2/facebook3.png/ENySn4YCGB0gAigC/ixy_OOX_e2_2OeVQEdrLzz8qFPdXs7D0VVCxGPfW6do?size=800x600&size_mode=2" /></a>
+    <a href=""><img src="https://photos-2.dropbox.com/t/2/AACdUa4gWxd2NVi-2MKDB6XTdYI2Yb1JgbthglGMOAYgfg/12/275238024/png/32x32/1/_/1/2/logo22.png/ENySn4YCGB0gAigC/4pTyCXsrCa6Tm_Om5IxSiJMrQimKSNwJhTdkj-YsqLc?size=800x600&size_mode=2" /></a>
+  </div>
+</div>
 </body>
 </html>
